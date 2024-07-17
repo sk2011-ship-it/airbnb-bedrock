@@ -132,7 +132,7 @@ class SummarizeBase(BaseTool):
                 },
             ]   
             print("calling llm")
-            response = llm.invke(prompt).content
+            response = llm.invoke(prompt).content
 
             print("got review summary " + response)
             return response
