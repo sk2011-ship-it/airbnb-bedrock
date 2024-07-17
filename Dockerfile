@@ -1,5 +1,4 @@
-FROM public.ecr.aws/docker/library/python:3.11.6-slim-bullseye
-
+FROM public.ecr.aws/docker/library/python:3.11
 
 RUN apt-get update
 
@@ -20,5 +19,7 @@ RUN pip3 install -r requirements.txt
 EXPOSE 8080
 
 COPY . .
+
+RUN sh download.sh
 
 ENTRYPOINT ["streamlit", "run", "main.py", "--server.port=8080", "--server.address=0.0.0.0"]
