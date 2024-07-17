@@ -88,6 +88,7 @@ if st.button("Send"):
                 print(row)
                 previous.append(f"{row.role}: {row.content}")
             response = agent.run(user_input, previous)
+            print("Response", response)
 
         st.session_state.messages.append(ChatMessage(role="user", content=user_input))
         st.session_state.messages.append(ChatMessage(role="assistant", content=response))

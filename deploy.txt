@@ -1,0 +1,27 @@
+[Unit]
+Description=Streamlit App
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/airbnb-bedrock
+ExecStart=/home/ubuntu/venv/bin/streamlit run main.py --server.port=8501
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=streamlit-app
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
+
+
+sudo journalctl -u streamlit-app -f
+
+sudo journalctl -u streamlit-app -p err
+
+sudo journalctl -u streamlit-app
