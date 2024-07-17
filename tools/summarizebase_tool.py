@@ -131,6 +131,7 @@ class SummarizeBase(BaseTool):
                     "role": "user",
                 },
             ]   
+            print("calling llm")
             response = llm.invke(prompt).content
 
             print("got review summary " + response)
