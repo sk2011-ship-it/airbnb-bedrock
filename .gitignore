@@ -1,0 +1,11 @@
+airbnb
+.venv
+.env
+venv
+__pycache__/*
+*/__pycache__/*
+
+listings.csv
+reviews.csv
+.idea/*
+.idea
