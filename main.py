@@ -45,14 +45,12 @@ def clear_session():
 def display_message(role, content):
     if role == "user":
         st.markdown(
-            f'<div style="display: flex; justify-content: flex-end;"><div style="background-color: #0084ff; color: white; padding: 10px; border-radius: 20px; max-width: 70%; margin: 5px;">{
-                content}</div></div>',
+            f'<div style="display: flex; justify-content: flex-end;"><div style="background-color: #0084ff; color: white; padding: 10px; border-radius: 20px; max-width: 70%; margin: 5px;">{content}</div></div>',
             unsafe_allow_html=True
         )
     else:
         st.markdown(
-            f'<div style="display: flex; justify-content: flex-start;"><div style="background-color: #f0f0f0; color: black; padding: 10px; border-radius: 20px; max-width: 70%; margin: 5px;">{
-                content}</div></div>',
+            f'<div style="display: flex; justify-content: flex-start;"><div style="background-color: #f0f0f0; color: black; padding: 10px; border-radius: 20px; max-width: 70%; margin: 5px;">{content}</div></div>',
             unsafe_allow_html=True
         )
 
