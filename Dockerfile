@@ -1,4 +1,4 @@
-FROM public.ecr.aws/docker/library/python:3.11
+FROM python:3.11
 
 RUN apt-get update
 
