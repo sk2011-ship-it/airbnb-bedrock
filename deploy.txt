@@ -25,3 +25,6 @@ sudo journalctl -u streamlit-app -f
 sudo journalctl -u streamlit-app -p err
 
 sudo journalctl -u streamlit-app
+
+sudo systemctl restart streamlit-app
+

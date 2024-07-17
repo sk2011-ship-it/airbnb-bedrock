@@ -95,11 +95,11 @@ if st.button("Send"):
         display_message("assistant", response)
 
         # Rerun the app to clear the input box
-        st.experimental_rerun()
+        st.rerun()
 
 if st.button("Clear Session"):
     clear_session()
-    st.experimental_rerun()
+    st.rerun()
 
 st.markdown("---")
 st.markdown("👆 Ask me anything about Airbnb listings, bookings, or general information!")
