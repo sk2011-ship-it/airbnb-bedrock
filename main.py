@@ -8,10 +8,6 @@ from tools.summarizebase_tool import summarize_tool
 from tools.interface_human import human_tool
 from tools.summary_keyword_tool import highlight_tool
 from tools.compare_tool import compare_tool
-# from tools.recomendation_tool import recommend_tool
-# from intent_classifier import IntentClassifier
-# from extracting_reviews import extract_reviews, reviews_to_list
-# from summarize import summarize_reviews
 
 
 class StreamHandler(BaseCallbackHandler):
@@ -65,7 +61,7 @@ with chat_container:
 user_input = st.text_input("Type your message here:", key="user_input")
 llm = ChatBedrock(
     credentials_profile_name="kamal",
-    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
+    model_id="anthropic.claude-3-5-sonnet-20240620-v1:0",
     model_kwargs={"temperature": 0},
     streaming=True,
     region_name="us-east-1"

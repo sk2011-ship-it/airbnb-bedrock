@@ -113,15 +113,25 @@ def row_to_xml(row):
 
 
 xml_strings = []
+
+print(len(df_ny))
+df_ny = df_ny.dropna(subset=['price'])
+df_ny = df_ny.dropna(subset=['review_scores_rating'])
+df_ny = df_ny.dropna(subset=['amenities'])
+df_ny = df_ny.dropna(subset=['neighborhood_overview'])
+print(len(df_ny))
+    
+
 record_count = 0
 for _, row in df_ny.iterrows():
 
     # print(row)
     # print(row_to_xml(row))
+    
 
     xml_strings.append(Document(row_to_xml(row), metadata={"state": "NY", "id": row["id"]}))
     record_count += 1
-    if record_count >= 1000:
+    if record_count >= 10000:
         break
 
 

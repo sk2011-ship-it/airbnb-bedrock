@@ -3,16 +3,27 @@
 
 streamlit run main.py
 
-1. rent added
-3. rating display
-4. add listind id as href
-5. compare review for specific keyword is not working
+1. rent added (done)
+3. rating display (done)
+4. add listind id as href (done)
+5. compare review for specific keyword is not working (done)
 
 
-2. search by rent
-6. pincone use a datastore
-7. make it run for SF, LA, NY
+2. search by rent (pending)
+6. pincone use a datastore (pending)
+7. make it run for SF, LA, NY (pending)
 
-8. deployment
 
-git@github.com:sk2011-ship-it/airbnb-bedrock.git
+
+=====
+
+don't index properties which don't have rent/rating
+check how to match exact microwave 
+refine answers
+
+reviews doesn't show thinking
+
+listing id was giving parseInt error 
+
+
+sonnet 3.4 use it

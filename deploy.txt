@@ -19,6 +19,7 @@ WantedBy=multi-user.target
 
 
 
+/etc/systemd/system/streamlit-app.service
 
 sudo journalctl -u streamlit-app -f
 
@@ -27,6 +28,8 @@ sudo journalctl -u streamlit-app -p err
 sudo journalctl -u streamlit-app
 
 sudo systemctl restart streamlit-app
+
+sudo systemctl status streamlit-app
 
 sudo systemctl stop streamlit-app
 
