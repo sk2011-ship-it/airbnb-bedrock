@@ -83,7 +83,7 @@ class SummarizeBase(BaseTool):
 
         # print(id)
         reviews_df = extract_reviews(listing_id)
-        reviews_df = reviews_df.sort_values(by="date")
+        # reviews_df = reviews_df.sort_values(by="date")
         if len(reviews_df) > 100:
             return reviews_df[:100]
         # print(reviews_df)
