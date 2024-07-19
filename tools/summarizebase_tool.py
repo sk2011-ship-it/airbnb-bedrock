@@ -83,10 +83,14 @@ class SummarizeBase(BaseTool):
 
         # print(id)
         reviews_df = extract_reviews(listing_id)
+        if len(reviews_df) > 100:
+            return reviews_df[:100]
         # print(reviews_df)
         if (len(reviews_df)) > 0:
             review_list = reviews_to_list(reviews_df)
             print(review_list)
+
+        
 
             prompt = """
                     You will be analyzing a set of Airbnb reviews. Your task is to create a summary of all reviews, highlight positive points, and identify negative points from these reviews. Here are the steps to follow:
