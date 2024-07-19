@@ -61,7 +61,7 @@ with chat_container:
 user_input = st.text_input("Type your message here:", key="user_input")
 llm = ChatBedrock(
     credentials_profile_name="kamal",
-    model_id="anthropic.claude-3-5-sonnet-20240620-v1:0",
+    model_id="anthropic.claude-3-sonnet-20240229-v1:0",
     model_kwargs={"temperature": 0},
     streaming=True,
     region_name="us-east-1"
