@@ -1,29 +1,16 @@
-# Airbnb
+# Simple POC Airbnb Agent
+
+Agent is deployed on AWS ec2 uses claude sonnet as LLM. 
+
+Agent acts a simple customer support bot helping in search properties from Airbnb based on users query.
 
 
-streamlit run main.py
+The user has can search properties based on amenities
 
-1. rent added (done)
-3. rating display (done)
-4. add listind id as href (done)
-5. compare review for specific keyword is not working (done)
+The user can ask to summarize reviews for a property and compare reviews between two properties. 
 
 
-2. search by rent (pending)
-6. pincone use a datastore (pending)
-7. make it run for SF, LA, NY (pending)
+The agent is deployed using streamlit
 
 
-
-=====
-
-don't index properties which don't have rent/rating
-check how to match exact microwave 
-refine answers
-
-reviews doesn't show thinking
-
-listing id was giving parseInt error 
-
-
-sonnet 3.4 use it
+Data is fetched from https://insideairbnb.com/
